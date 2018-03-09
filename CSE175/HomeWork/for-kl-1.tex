@@ -1,0 +1,42 @@
+\documentclass[11pt]{article}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \usepackage[letterpaper]{geometry}
+    \usepackage{graphicx}
+    \usepackage{colortbl}
+    \usepackage{tikz}
+    \usetikzlibrary{decorations.text,calc,arrows.meta}
+    \usepackage{amsmath,amssymb}
+    \usepackage[utf8]{inputenc}    
+    \title{First-Order Logic for-kl-1}
+    
+    \author{Shulang Ning}
+    
+    \begin{document}
+        
+    \maketitle
+    
+    \section{fol-kr-1}
+    1.$\forall x$ Human($x$) $\rightarrow$ Student($x$)\\
+    2.$\exists x$ Book($x$) $\rightarrow$ Useful($x$)\\
+    3.$\neg \forall x$ (Book($x$) $\rightarrow$ Useful($x$))\\ 
+    4.$\neg \forall x$(Dog($x$) $\rightarrow$Student($x$))\\
+    5.$\forall x$ Dog($x$) $\rightarrow$ $\forall y$ Has($x,y$)\\ 
+    6.$\exists x$ Human($x$) $\rightarrow$ $\forall y$ Likes($x,y$)\\
+    7.$\forall x$ (Coworker($x,y$) $\leftrightarrow$ $\forall y$ (Human($x$) $\and$ Human(y) $\land \exists z$ (Human($z$) $\land$ Boss($x,z$) $\and$ Boss($y,z$))))\\
+    8.Equal(Tony Stark, Iron Man)\\
+    9.$\exists x \forall y$ Human($x$) $\rightarrow$ Like($x,y$) $\leftrightarrow$ Has($x,y$)\\
+    10.$\exists x$ (Book($x$) $\land$ Useful($x$)) $\land$ $\forall y$ ((Book($y$) $\land \neg$ Equal($x,y$)) $\rightarrow \neg$ Useful($y$))\\
+    11.$\exists x$ Dog($x$) $\rightarrow$ Like($x$,Tony Stark)\\
+    12.$\forall w$ Dog($w$) $\land$ $\forall x$ (Dog($x$) $\land \neg$ Equal($w,x$) $\land$ GT($w,x$)) $\land$ $\forall y$ Human($y$) $\land$  $\forall z$ ((Human($z$) $\land \neg$ Equal($y,z$) $\land$ GT($y,z$)) $\rightarrow$  GT($w,z$))\\
+    13.$\forall x$ Dog($x$) $\land$ Useful($x$)\\
+    14.$\exists x$ Human($x$) $\rightarrow$ Student($x$)\\
+    15.$\neg \forall x$ (Human($x$) $\rightarrow$ Student($x$))\\
+    16.$\neg \forall x$ (Book($x$) $\rightarrow$ Useful($x$))\\
+    17.$\forall x$ (Student($x$) $\land$ Book($y$)) $\rightarrow$ $\exists y$ Has($x,y$)\\
+    18.$\exists x$ (Human($x$) $\land$ Book($y$)) $\rightarrow$ $\forall y$ Has($x,y$)\\
+    19.$\exists x$ Human($x$) $\land$ $\exists y$ (Book($y$) $\land$ Has($x,y$) $\land$ Book($z$) $\land \neg$ Equal($y,z$)) $\rightarrow$ $\forall z$ Like($x,y$)\\
+    20.$\exists x$ Student($x$) $\land$ $\exists y$ (Dog($y$) $\land$ (Dog($z$) $\land \neg$ Equal($y,z$))) $\rightarrow$ $\forall z$ Has($x,y$)
+
+   
+
+    \end{document}

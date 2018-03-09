@@ -1,0 +1,34 @@
+\documentclass[11pt]{article}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \usepackage[letterpaper]{geometry}
+    \usepackage{graphicx}
+    \usepackage{colortbl}
+    \usepackage{tikz}
+    \usetikzlibrary{decorations.text,calc,arrows.meta}
+    \usepackage{amsmath,amssymb}
+    \usepackage[utf8]{inputenc}    
+    \title{First-Order Logic for-kl-2}
+    
+    \author{Shulang Ning}
+    
+    \begin{document}
+        
+    \maketitle
+    
+    \section{fol-kr-2}
+    1.Occupation(Emily,Surgeon) $\lor$ Occupation(Emily,Lawyer)\\
+    2.Occupation(Joe,Actor) $\land$ $\exists x$ $x \neq$ Actor Occupation(Joe, $x$)\\
+    3.$\forall x$ Occupation($x$,Surgeon) $\rightarrow$ Occupation($x$, Doctor)\\
+    4.$\neg \exists x$ Customer(Joe, $x$) $\land$ Occupation($x$, Lawyer)\\
+    5.$\exists x$ Boss(x, Emily) $\land$ Occupation($x$, Lawyer)\\
+    6.$\exists x$ Occupation($x$, Lawyer) $\land$ $\forall y$ Customer($y,x$) $\rightarrow$ Occupation($y$, Doctor)\\
+    7.$\forall x$ Occupation($x$, Surgeon) $\rightarrow$ $\exists y$ Customer($x,y$) $\land$ Occupation($x$, Lawyer)\\
+
+
+
+    
+
+
+
+
+    \end{document}

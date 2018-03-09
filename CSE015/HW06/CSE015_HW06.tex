@@ -1,0 +1,50 @@
+\documentclass[11pt]{article}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \usepackage[letterpaper]{geometry}
+    \usepackage{graphicx}
+    \usepackage{colortbl}
+    \usepackage{tikz}
+    \usetikzlibrary{decorations.text,calc,arrows.meta}
+    \usepackage{amsmath,amssymb}
+    \title{CSE015-HW06}
+    
+    \author{Shulang Ning}
+    
+    \begin{document}
+        
+    \maketitle
+    
+    \section{Question 1}
+        There are $18$ mathematics majors, so one mathematics major can be chosen in $18$ ways. Also, there are $325$ computer majors, so one computer major can be chosen in $325$ ways. Using product rule, which is $18c_1 * 325c_1 = 5850$ ways.
+
+    \section{Question 5}
+        Number of different airlines from New York to Denver is $6$, and Number of different airlines from Denver to San Francisco is $7$. By using profuct rule, the number of different pairs of airlines we can choose from New York to San Francisco via Denver is $6 * 7 = 42$.
+
+    \section{Question 7}
+        There are $26$ letters, and we can choose first letter in $26$ ways. For second place to be filled in by a letter, there are still $26$ ways. It is dependent from previous selections. For third place is also $26$ ways. It is dependent from previous selections. By using product rule, $26 * 26 * 26 = 17576$ ways.
+    
+    \section{Question 8}
+        The first letter chosen from alphabet have $26$ ways. The second one have only $25$ ways because there is one letter has been chosen. It is independent from previous selections. In same cse, for choosing the third letter, there are only $24$ ways because there are two letters have been chosen. It is independent from previous selections. By using product rule, the three different lettered initials can be made in $26 * 25 * 24 = 15600$ ways. 
+    
+    \section{Question 9}
+        The first letter is chosen from the question, which is an $A$, and that means it is only $1$ way. The remaining two place can be filled in $26$ ways each, and filling these places is mutually independent. Therefore, the number of three lettered initial starting with $A$ are $26 * 26 = 676$.
+
+    \section{Question 14}
+        Number of bit strings with length $n = 2^n$ because each bit can be chosen in two ways either 0 or 1. Because there are two $1$s, the first one is at the beginning of the row and another one is at the end of row, so we have the length is $n = 2^{n-2}$.
+
+    \section{Question 46}
+    \subsection{}
+        The brige must be in the picture, she must be takes one place of the $6$ people, and the rest of $5$ places can be arrange with rest of $9$ people. The equation is $_9C_5 = 15120$. Also, there are $6$ ways to place the brige in the $6$ people group, so the total possible unique combinations are $6 * 15120 = 90720$.
+    \subsection{}
+        The brige and the groom must be in the picture, they must take two places of the $6$ people, and the rest of $4$ places can be arrange with rest of $8$ people. The equation is $_8C_4 = 1680$. Also, there are $6 * 5$ ways to place the brige and the groom in the $6$ people group, so the total possible unique combinations are $6 * 5 * 1680 = 50400$.
+    \subsection{}
+        The brige or the groom must be in the picture, she or he must takes one places of the $6$ people, and the rest of $5$ places can be arrange with rest of $8$ people. The equation is $_8C_5 = 6720$. Also, there are $2$ ways to choose whether brige or groom fo the $6$ people group, and $6$ ways to place the brige or the groom in the $6$ people group, so the total possible unique combinations are $2 * 6 * 6720 = 80640$.
+
+
+
+
+
+
+ 
+
+\end{document}

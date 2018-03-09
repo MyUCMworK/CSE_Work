@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sning/Desktop/UCM/CSE165/Lab06/GenerateCircleData.h
+Vec.h
+/Users/sning/Desktop/UCM/CSE165/Lab06/Vec.h
+iostream
+-
+vector
+-
+math.h
+-
+
+/Users/sning/Desktop/UCM/CSE165/Lab06/Vec.h
+
+/Users/sning/Desktop/UCM/CSE165/Lab06/circleParam.cpp
+iostream
+-
+vector
+-
+cmath
+-
+GenerateCircleData.h
+/Users/sning/Desktop/UCM/CSE165/Lab06/GenerateCircleData.h
+
+/Users/sning/Desktop/UCM/CSE165/Lab06/play.cpp
+iostream
+-
+

@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \usepackage[letterpaper]{geometry}
+    \usepackage{graphicx}
+    \usepackage{colortbl}
+    \usepackage{tikz}
+    \usetikzlibrary{decorations.text,calc,arrows.meta}
+    \usepackage{amsmath,amssymb}
+    \title{CSE015-HW04}
+    
+    \author{Shulang Ning}
+    
+    \begin{document}
+        
+    \maketitle
+    
+    \section{Question 1}
+        Number of five are: $1, 2, 3, 4, 5$\\
+        For element:\\
+        \tab Best case: 1\\
+        \tab Worst case: 6\\
+
+    \section{Question 2}
+    $O(n) = n^2$ because each list sorts $n$ times and each sort calls insert function. Then, insert goes to insert $n - 1$ times. So $n * (n - 1) = n^2 - n$, then sort is done and the program inserts new element, which will happen $n$ times. So $n^2 - n + n$. Therefore, $n^2 - n + n = n^2$\\
+
+    \section{Question 3}
+    Second Order.\\
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \usepackage[letterpaper]{geometry}
+    \usepackage{graphicx}
+    \usepackage{colortbl}
+    \usepackage{tikz}
+    \usetikzlibrary{decorations.text,calc,arrows.meta}
+    \usepackage{amsmath,amssymb}
+    \usepackage[utf8]{inputenc}    
+    \title{First-Order Logic for-kl-3}
+    
+    \author{Shulang Ning}
+    
+    \begin{document}
+        
+    \maketitle
+
+    \section{fol-kr-3}
+    1.Wrote(Gershwin,TheManILove)\\
+    2.$\neg$ Wrote(Gershwin, EleanorRigby)\\
+    3.Wrote(Gershwin, TheManILove) $\lor$ Wrote(McCartney,TheManILove)\\
+    4.$\exists x$ Wrote(Joe,$x$)\\
+    5.$\exists x$ CopyOf($x$, Revolver) $\land$ Owns(Joe,$x$)\\
+    6.$\forall x$ Sings(McCartney, $x$, Revolver) $\rightarrow$ Wrote(McCartney, $x$)\\
+    7.$\neg$ ($\exists x$Wrote(Gershwin,x) $\land$ $\exists y$ Sings($y$, $x$, Revolver))\\
+    8.$\forall x$ Wrote(Gershwin,$x$) $\rightarrow$ $\exists y$ $\exists z$ $(y,x,z)$\\
+    9.$\exists x$ $\forall y$ Wrote(Joe,$y$) $\rightarrow$ $\exists z$ Sings($z,y,x$)\\
+    10.$\exists x$ CopyOf($x,y$) $\land$ $\exists y$ Owns(Joe,$x$) $\land$ $\exists z$ Sings(BHoliday, TheManILove,$y$)\\
+    11.$\forall x$ ($\exists y$ Sings(McCartney, $y, x$)) $\rightarrow$ $\exists z$ CopyOf($z,x$) $\land$ Owns(Joe,$z$)\\
+    12.$\forall w$ ($\forall x$ $\forall y$Sings($y,x,w$) $\rightarrow$ Sings(BHoliday, $x, w$)) $\rightarrow$ $\exists z$ CopyOf($z,w$) $\land$ Owns(Joe, $z$)
+
+
+
+    
+
+
+
+
+    \end{document}

@@ -1,0 +1,29 @@
+1. When we get into the gdb, type "run"
+
+2. Type "run arg1 arg2"
+
+3. Type "break" with line number
+
+4. Type "break if <expression>" 
+
+5. Type "next"
+
+6. Use "step"
+
+7. Type "c"
+
+8. Type "p"
+
+9. Use display
+
+10. Type "list <function name>"
+
+11. Type "q"
+
+12. "\n" is not at the end of the string
+
+13. scanf('%d', input);
+
+14. Change to scanf('%d', &input)
+
+15. When the code is running, the value of variable "sum" is not changed to what we expect in memory. In order to change the value of sum, we pass the reference of "sum" to function "read_values" and put "*" to all "sum" that in function "read_values"

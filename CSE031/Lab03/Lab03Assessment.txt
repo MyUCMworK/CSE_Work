@@ -1,0 +1,19 @@
+1) #include <stdio.h>  // static memory
+   #include <stdlib.h> // static
+   #include <malloc.h> // static
+
+   int main() {      // stack
+       int num;	     // stack
+       int *ptr;     // stack
+       int **handle; // stack
+
+       num = 14;     // stack
+       ptr = (int *)malloc(2 * sizeof(int)); // stack and heap
+       handle = &ptr;  // stack
+       *ptr = num;     // stack
+       ptr = &num;     // stack
+       handle = (int **)malloc(1 * sizeof(int **));  // stack and heap
+}
+2) In this program, memory doesn't get freed, but it gets allocated by malloc
+3) It is in line 11 and line 15
+4) There is a memory leak in line 14

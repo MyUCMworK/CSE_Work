@@ -1,0 +1,34 @@
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<ctype.h>
+#include<stdio.h>
+using namespace std;
+int main(){
+  ifstream inFile;
+  string filename;
+  string word;
+  string simple;
+  int count = 0;
+  cin >> simple;
+
+  inFile.open("words.txt");
+
+  int i = 0;
+  char str[] = word;
+  char c;
+  while(str[i]){
+    c=str[i];
+    putchar (tolower(c));
+    i++;  
+    while(!inFile.eof()){
+    inFile >> word;
+    if (word == simple){
+    count++;
+    }
+  }
+  }cout << count;
+  inFile.close();
+
+  return 0;
+}
